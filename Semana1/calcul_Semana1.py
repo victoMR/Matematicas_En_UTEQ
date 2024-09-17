@@ -4,7 +4,12 @@ from tkinter import messagebox
 from fractions import Fraction
 import pdoc
 
-# html = pdoc.pdoc("calcul_Semana1")
+##TO DO
+# 1. Agregar matplot para graficar los resultados
+# 2. Agregar un boton para graficar
+# 3. Agregar un boton para limpiar la grafica
+# 4. Agregar un boton para guardar la grafica
+# 5. Agregar un boton para exportar la grafica
 
 
 class Calculadora:
