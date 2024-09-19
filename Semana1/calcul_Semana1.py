@@ -17,7 +17,7 @@ class Calculadora:
     Clase que representa una calculadora para sistemas de ecuaciones lineales 2x2.
 
     La calculadora resuelve sistemas de dos ecuaciones lineales con dos incógnitas
-    utilizando la regla de Cramer y muestra todo el proceso paso a paso. La interfaz
+    utilizando la regla de Intercabio de filas y columnas y muestra todo el proceso paso a paso. La interfaz
     gráfica permite ingresar los coeficientes y constantes, y muestra los resultados
     de manera clara y detallada.
     """
@@ -151,7 +151,7 @@ class Calculadora:
 
     def resolver_ecuaciones(self):
         """
-        Resuelve el sistema de ecuaciones utilizando el método de matrices (regla de Cramer).
+        Resuelve el sistema de ecuaciones utilizando el método de matrices (regla de Intercabio de filas y columnas).
         Calcula los determinantes necesarios para encontrar las soluciones de x e y,
         y muestra el proceso y resultados en el área de resultados.
         """
