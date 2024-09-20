@@ -2,7 +2,6 @@ import customtkinter as ctk
 import tkinter as tk
 from tkinter import messagebox
 from fractions import Fraction
-import pdoc
 
 ##TO DO
 # 1. Agregar matplot para graficar los resultados
@@ -111,10 +110,14 @@ class Calculadora:
         :param operation: La operación entre los términos, "+" o "-".
         :return: El coeficiente como una fracción.
         """
+        # Crea la regla de simbolos para la operacion
         try:
             coef = Fraction(term)
             if operation == "-":
                 coef *= -1
+                self.result_area.insert(tk.END, "---------------------\n")
+                self.result_area.insert(tk.END, f"Restando {term} = {coef}\n")
+                self.result_area.insert(tk.END, "---------------------\n")
             return coef
         except ValueError:
             raise ValueError(f"Término inválido: {term}")
